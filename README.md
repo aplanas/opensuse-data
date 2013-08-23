@@ -1,17 +1,10 @@
 openSUSE - Datamining scripts
 =============================
 
-create-virtualenv.sh	Use PIP to create a virtual environment for Python.
+Use create-virtualenv.sh to create a virtual environment for Python (needs PIP).
 
-user-agents.sh		Script to generate the bots.txt file.
+To generate the bots.txt file, you can use user-agents.sh script.
 
-log2db.sh		Set of scripts to convert the Apache log files to
-log2db.py		a BerkeleyDB.
-dblist.py
+To convert the Apache log files to a BerkelyDB representation, use log2db.sh. After that you need to convert this in a BerkeleyDB queue for fast data analysis using the analyze.sh script.
 
-analyze.sh		Convert BerkeleyDB to queue, filtering partial
-analyze.py		results. Used for RT data analysis.
-
-Group and tables.ipynb	IPython notebook with the actual analysis.
-
-osc13 	  		openSUSE Conference 2013 presentation
+The IPython notebook Group and tables.ipynb contains all the cells used to make the proper analysis of the data.
